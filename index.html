@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMU - Create Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="logo">
+                <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.4 20L12 8H16.8L20.4 20H16.8L16.2 17.6H12.6L12 20H8.4ZM13.2 14.4H15.6L14.4 10.4L13.2 14.4Z" fill="white"/>
+                    <path d="M22.8 20V8H26.4L29.2 14.8L32 8H35.6V20H32V12.4L29.6 18.4H28.8L26.4 12.4V20H22.8Z" fill="white"/>
+                    <path d="M38.4 20V8H42V14.4C42 15.2 42.2667 15.8667 42.8 16.4C43.3333 16.9333 44 17.2 44.8 17.2C45.6 17.2 46.2667 16.9333 46.8 16.4C47.3333 15.8667 47.6 15.2 47.6 14.4V8H51.2V14.4C51.2 16.4 50.5333 18.0667 49.2 19.4C47.8667 20.7333 46.2 21.4 44.2 21.4C42.2 21.4 40.5333 20.7333 39.2 19.4C37.8667 18.0667 37.2 16.4 37.2 14.4V8H38.4V20Z" fill="white"/>
+                </svg>
+            </div>
+            
+            <button class="back-button">
+                <span>Back to website</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div class="hero-content">
+                <h1>Capturing Moments,<br>Creating Memories</h1>
+                <div class="progress-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot active"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Create an account</h2>
+                    <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+                </div>
+
+                <form class="signup-form" id="signupForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group password-group">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <button type="button" class="password-toggle" id="passwordToggle">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M1.66669 10S4.16669 5 10 5s8.33331 5 8.33331 5-2.5 5-8.33331 5-8.33331-5-8.33331-5z" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#" class="terms-link">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="create-button">Create account</button>
+
+                    <div class="divider">
+                        <span>Or register with</span>
+                    </div>
+
+                    <div class="social-buttons">
+                        <button type="button" class="social-button google-button">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18.16 8.18H10v3.64h4.74c-.2 1.08-.74 2-1.54 2.64v2.18h2.5c1.46-1.34 2.3-3.32 2.3-5.66 0-.56-.05-1.1-.14-1.62v-.18z" fill="#4285F4"/>
+                                <path d="M10 18c2.08 0 3.82-.69 5.1-1.86l-2.5-2.18c-.69.46-1.58.74-2.6.74-2 0-3.7-1.35-4.3-3.16H2.94v2.25C4.22 16.49 6.93 18 10 18z" fill="#34A853"/>
+                                <path d="M5.7 11.54c-.31-.92-.31-1.92 0-2.84V6.45H2.94C1.72 8.87 1.72 11.87 2.94 14.29l2.76-2.75z" fill="#FBBC04"/>
+                                <path d="M10 4.36c1.1 0 2.08.38 2.86 1.13l2.14-2.14C13.82 2.09 12.08 1.4 10 1.4c-3.07 0-5.78 1.51-7.06 4.21l2.76 2.75c.6-1.81 2.3-3.16 4.3-3.16z" fill="#EA4335"/>
+                            </svg>
+                            Google
+                        </button>
+                        <button type="button" class="social-button apple-button">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.312 10.484c-.02 2.203 1.95 2.938 1.975 2.95-.016.052-.308 1.04-1.014 2.063-.612.882-1.248 1.762-2.25 1.78-1.003.017-1.324-.588-2.467-.588s-1.498.57-2.434.606c-1.003.035-1.708-.96-2.324-1.84C5.074 13.066 3.9 9.46 5.668 7.23c.876-1.107 2.446-1.81 4.146-1.829.972-.018 1.888.647 2.48.647.593 0 1.706-.8 2.874-.683.489.02 1.86.196 2.742 1.476-.071.044-1.638.947-1.62 2.824l.022.82zM12.45 4.467c.514-.6.86-1.433.766-2.267-.74.03-1.636.489-2.166 1.105-.476.548-.893 1.425-.78 2.267.825.064 1.668-.415 2.18-1.105z" fill="currentColor"/>
+                            </svg>
+                            Apple
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
